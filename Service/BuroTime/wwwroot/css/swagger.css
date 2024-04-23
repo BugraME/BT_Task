@@ -1,0 +1,22 @@
+﻿:root { --header-bg: white; --authorize-color: #DE0231; --authorize-border-color: #DE0231; }
+body { background-color: #f9f9f9; }
+.swagger-ui .topbar { background-color: var(--header-bg) !important; padding: 1rem; position: sticky; top: 0; transition: top 300ms ease; z-index: 3; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) /* Header */ }
+.swagger-ui .topbar .download-url-wrapper .select-label select { border-color: var(--authorize-border-color); /* Header Select Border Color */ } 
+.swagger-ui .topbar .download-url-wrapper .select-label { justify-content: end; /* Select Definition */ }
+swagger-ui .topbar .download-url-wrapper .select-label select { flex: 0.5; border: none; /* Select Definition */ }
+.swagger-ui .topbar .download-url-wrapper > label > span, .curl-command { display: none; /* Select Definition & CURL */ }
+.swagger-ui .info { margin: 20px 0; /* Linkler DIV */ }
+.swagger-ui .info hgroup.main { margin: 0; /* Linkler DIV */ }
+.swagger-ui .scheme-container { background: transparent; padding: 0; margin: 0; box-shadow: none; /* Authorize Button */ }
+.swagger-ui .auth-wrapper { justify-content: flex-start !important; /* Authorize Button */ }
+.swagger-ui .schemes > .auth-wrapper .authorize { margin-left: 0 !important; color: var(--authorize-color); border-color: var(--authorize-border-color); /* Authorize Button */ }
+.swagger-ui .btn.authorize svg { fill: var(--authorize-color); /* Authorize svg icon */ }
+.swagger-ui .parameters-col_description input { max-width: unset !important /* Input Uzunluğu */ }
+.parameter__empty_value_toggle, .responses-wrapper > .opblock-section-header { display: none !important; /* Response Bar */ }
+.responses-inner > div > h4:before { content: "Example "; /* Response'un önüne Example */ }
+.responses-inner > div > h4 { margin-top: 10px !important; }
+.description > .renderedMarkdown > p { position: relative; cursor: pointer; display: inline-block; width: 40%; white-space: nowrap; /* API For Internal Use */ }
+.swagger-ui .model-box-control:focus, .swagger-ui .models-control:focus, .swagger-ui .opblock-summary-control:focus { outline: none; /* Çizgi kaldırma */ }
+.swagger-ui .auth-container input[type=text] { min-width: 100%; /* Authorization input boyutunu ayarlar */ }
+.swagger-ui .dialog-ux .modal-ux-content { max-height: unset; /* Authorization PopUp yükseklik limitini kaldırır */ }
+.swagger-ui .dialog-ux .modal-ux { max-width: 617px; }
